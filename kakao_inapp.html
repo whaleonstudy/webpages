@@ -17,13 +17,13 @@
 			document.body.removeChild(t);
 		};
 		function inappbrowserout(){
-			copytoclipboard(window.location.href);
+			copytoclipboard('https://study.whaleon.naver.com/detail/ff3dc9e7309b487eb82c5272aee1aae6');
 			alert('URL주소가 복사되었습니다.\n\nSafari가 열리면 주소창을 길게 터치한 뒤, "붙여놓기 및 이동"를 누르면 정상적으로 이용하실 수 있습니다.');
 			location.href='x-web-search://?';
 		};
 
 		var useragt = navigator.userAgent.toLowerCase();
-		var target_url = 'kakaotalk://web/openExternal?url=[https://whaleon.us/on/5000012440?p=c81c3e34714947029936ffc119ced32d]';
+		var target_url = location.href;
 		
 		if(useragt.match(/kakaotalk/i)){
 			
