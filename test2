@@ -1,0 +1,9 @@
+// 1. play.google.com으로 리다이렉트하는 경로 선언
+app.get('/market', (req: Request, res: Response) =>
+  res.redirect(
+    'https://play.google.com/store/apps/details?id=com.naver.whale',
+  ),
+);
+
+// 2. 해당 경로를 fallback url에 넘겨줌
+location.href = 'intent:#Intent;scheme=whale;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.naver.whale;S.browser_fallback_url=https://whaleon.us/on/5000012440?p=c81c3e34714947029936ffc119ced32d;end'
